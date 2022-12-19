@@ -38,7 +38,7 @@ const helpEmbed = new EmbedBuilder()
     )
     .setThumbnail('https://i.imgur.com/xLbEPdp.jpeg ') 
     .setTimestamp()
-    .setFooter({ text: 'Made by NotNathan'});
+    .setFooter({ text: 'Made by NotNathan24'});
 
     const prefix="?"
 
