@@ -1,0 +1,21 @@
+{
+  "name": "nathanbot-js-2.0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/builders": "^1.4.0",
+    "@discordjs/opus": "^0.8.0",
+    "@discordjs/rest": "^1.5.0",
+    "@discordjs/voice": "^0.14.0",
+    "discord-api-types": "^0.37.23",
+    "discord-player": "^5.3.2",
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3"
+  }
+}
