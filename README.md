@@ -27,9 +27,9 @@ If you get a package install error delete: package.json and package-lock.json an
 
 Step 2:
 
-Create a new file called .env
+Go to file called .env
 
-Then type:
+Then put:
 
 TOKEN=Put your token here
 
