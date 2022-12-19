@@ -24,21 +24,21 @@ const commands = [];
 client.commands = new Collection();
 
 const helpEmbed = new EmbedBuilder()
-  .setColor(14497577)
+  .setColor(16706535)
     .setTitle('Help Menu')
     .addFields(
     { name: "Here's a list of things I can do: ", value: "List of commands:"},
-        { name: '?/help', value: 'Shows you this menu.'},
-        { name: '?/play', value: 'plays selected song'},
-        { name: '?/pause', value: 'Pauses current song'},
-        { name: '?/skip', value: 'skips to next song'},
-        { name: '?/queue', value: 'queues next song'},
-        { name: '?/resume', value: 'resumes current song'},
-        { name: '?/exit', value: 'Kick the bot from the channel'},
+        { name: '?help', value: 'Shows you this menu.'},
+        { name: '?play', value: 'Play a song!'},
+        { name: '?pause', value: 'Pause the music!'},
+        { name: '?skip', value: 'Skip the current song!'},
+        { name: '?queue', value: 'Shows the queue!'},
+        { name: '?resume', value: 'Resume the music!'},
+        { name: '?exit', value: 'Leave the voice channel!'},
     )
     .setThumbnail('https://i.imgur.com/xLbEPdp.jpeg ') 
     .setTimestamp()
-    .setFooter({ text: 'Made by NotNathan24'});
+    .setFooter({ text: 'Made by NotNathan'});
 
     const prefix="?"
 
