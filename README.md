@@ -24,6 +24,7 @@ npm install discord-player
 npm install dotenv --save
 
 If you get a package install error delete: package.json and package-lock.json and reinstall the packages
+
 Step 2:
 
 Create a new file called .env
