@@ -2,7 +2,7 @@ require('dotenv').config();
 
 const {REST} = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v10');
-const { Client, GatewayIntentBits, Collection } = require('discord.js');
+const { Client, GatewayIntentBits, Collection, EmbedBuilder } = require('discord.js');
 const { Player } = require("discord-player")
 
 const fs = require('fs');
@@ -22,6 +22,25 @@ const client = new Client({intents: [
 // List of all commands
 const commands = [];
 client.commands = new Collection();
+
+const helpEmbed = new EmbedBuilder()
+  .setColor(14497577)
+    .setTitle('Help Menu')
+    .addFields(
+    { name: "Here's a list of things I can do: ", value: "List of commands:"},
+        { name: '?/help', value: 'Shows you this menu.'},
+        { name: '?/play', value: 'plays selected song'},
+        { name: '?/pause', value: 'Pauses current song'},
+        { name: '?/skip', value: 'skips to next song'},
+        { name: '?/queue', value: 'queues next song'},
+        { name: '?/resume', value: 'resumes current song'},
+        { name: '?/exit', value: 'Kick the bot from the channel'},
+    )
+    .setThumbnail('https://i.imgur.com/xLbEPdp.jpeg ') 
+    .setTimestamp()
+    .setFooter({ text: 'Made by NotNathan24'});
+
+    const prefix="?"
 
 const commandsPath = path.join(__dirname, "commands"); // C:\Discord Music Bot\commands
 const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith('.js'));
@@ -76,5 +95,18 @@ client.on("interactionCreate", async interaction => {
         await interaction.reply({content: "There was an error executing this command"});
     }
 });
+
+client.on("messageCreate", message => {
+    if (message.author.bot) return;
+  if (!message.content.startsWith(prefix)) return;
+
+  const commandBody = message.content.slice(prefix.length);
+  const args = commandBody.split(' ');
+  const command = args.shift().toLowerCase();
+
+  if (command == "help") {
+    message.reply({ embeds: [helpEmbed] });
+  }
+})
 
 client.login(process.env.TOKEN);
