@@ -6,57 +6,31 @@ A discord bot made with Discord.js that plays music
 - [Node](https://nodejs.org/en/) - Version 16 or higher
 - [FFMPEG](https://www.ffmpeg.org/)
 
-# Setup
+# Installation
 
-Step 1: 
+```
+# Install the dependencies
+npm install
 
-Install packages:
-```
-npm install discord.js
-```
-```
-npm install @discordjs/builders
-```
-```
-npm install @discordjs/opus
-```
-```
-npm install @discordjs/rest
-```
-```
-npm install @discordjs/voice
-```
-```
-npm install discord-api-types
-```
-```
-npm install discord-player
-```
-```
-npm install dotenv --save
+# Configure Discord Bot Token
+ In .env 
+ TOKEN=INSERT_YOUR_TOKEN_HERE
+ CLIENT_ID=INSERT_YOUR_CLIENT_ID_HERE
 ```
 
-If you get a package install error delete: package.json and package-lock.json and reinstall the packages
+# Required permissions
 
-Step 2:
+Make sure that your bot has the `applications.commands` application scope enabled, which can be found under the `OAuth2` tab on the [developer portal](https://discord.com/developers/applications/)
 
-Go to file called .env
+Enable the `Server Members Intent` and `Message Content Intent` which can be found under the `Bot` tab on the [developer portal](https://discord.com/developers/applications/)
 
-Then put:
+# Starting the application
 
-TOKEN=Put your token here
-
-CLIENT_ID=Put client token here
-
-Step 3:
-
-Open New Terminal:
-
-Type:
-
+```
 node index.js
+```
 
-# Commands
+# Features & Commands
 
 - ?help - Shows you a list of commands
 
@@ -74,3 +48,15 @@ node index.js
 - ?queue - Shows the queue
 
 - ?exit - Leave the voice channel
+
+# Common errors
+
+Here is a list of common errors and how you can fix them.
+
+# Dependencies aren't up to date
+
+The packages used in this repository get updated often. That is why it is always worth a try updating those if you get an error like `invalid URL: undefined` or when the bot crashes when running the play command.
+
+# FFMPEG is not installed on the machine running the bot
+
+The `?play` command requires FFMPEG to be installed on the machine that is running the bot. You can download it on the official [FFMPEG website](https://www.ffmpeg.org/).
