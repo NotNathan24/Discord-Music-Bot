@@ -7,7 +7,7 @@ Step 1:
 Make sure node.js is installed and Visual Studio Code and ffmpeg
 
 Install packages:
-
+```
 npm install discord.js
 
 npm install @discordjs/builders
@@ -23,7 +23,7 @@ npm install discord-api-types
 npm install discord-player
 
 npm install dotenv --save
-
+```
 If you get a package install error delete: package.json and package-lock.json and reinstall the packages
 
 Step 2:
