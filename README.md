@@ -56,7 +56,7 @@ node index.js
 
 - ?help - Shows you a list of commands
 
-- play
+- ?play
   - song {url}       - plays the song from the youtube url
   - search {keyword} - searches for the keyword on youtube and plays the first result
   - playlist {url}   - plays the playlist from url
