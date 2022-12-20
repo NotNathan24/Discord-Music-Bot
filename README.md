@@ -4,7 +4,7 @@ A discord bot made with Discord.js that plays music
 # Setup
 
 Step 1: 
-Make sure `node.js` is installed and `Visual Studio Code` and `ffmpeg`
+Make sure `node.js`, `Visual Studio Code` and `ffmpeg` are installed
 
 Install packages:
 ```
