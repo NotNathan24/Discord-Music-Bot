@@ -10,6 +10,7 @@ Install packages:
 ```
 npm install discord.js
 ```
+```
 npm install @discordjs/builders
 ```
 npm install @discordjs/opus
