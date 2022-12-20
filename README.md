@@ -54,16 +54,16 @@ node index.js
 
 # Commands
 
-?help
+- ?help
 
-?play
+- ?play
 
-?skip
+- ?skip
 
-?queue
+- ?queue
 
-?pause
+- ?pause
 
-?resume
+- ?resume
 
-?exit
+- ?exit
