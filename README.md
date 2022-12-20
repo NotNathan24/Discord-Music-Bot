@@ -1,9 +1,10 @@
 # Discord-Music-Bot
 A discord bot made with Discord.js that plays music
 
+# Setup
+
 Step 1: 
-Make sure node.js is installed
-and Visual Studio Code
+Make sure node.js is installed and Visual Studio Code and ffmpeg
 
 Install packages:
 
@@ -43,4 +44,18 @@ Type:
 
 node index.js
 
-That should be it
+# Commands
+
+?help
+
+?play
+
+?skip
+
+?queue
+
+?pause
+
+?resume
+
+?exit
