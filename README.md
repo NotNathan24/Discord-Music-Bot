@@ -54,19 +54,19 @@ node index.js
 
 # Commands
 
-- ?help
+- ?help - Shows you a list of commands
 
 - play
   - song {url}       - plays the song from the youtube url
   - search {keyword} - searches for the keyword on youtube and plays the first result
   - playlist {url}   - plays the playlist from url
 
-- ?pause
+- ?pause - Pause the music
 
-- ?skip
+- ?skip - Skip the current song
 
-- ?resume
+- ?resume - Resume the music
 
-- ?queue
+- ?queue - Shows the queue
 
-- ?exit
+- ?exit - Leave the voice channel
