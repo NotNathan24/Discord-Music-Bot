@@ -13,17 +13,24 @@ npm install discord.js
 ```
 npm install @discordjs/builders
 ```
+```
 npm install @discordjs/opus
+```
 ```
 npm install @discordjs/rest
 ```
+```
 npm install @discordjs/voice
+```
 ```
 npm install discord-api-types
 ```
+```
 npm install discord-player
 ```
+```
 npm install dotenv --save
+```
 ```
 
 If you get a package install error delete: package.json and package-lock.json and reinstall the packages
