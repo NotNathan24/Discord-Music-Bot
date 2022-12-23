@@ -59,4 +59,4 @@ The packages used in this repository get updated often. That is why it is always
 
 # FFMPEG is not installed on the machine running the bot
 
-The `?play` command requires FFMPEG to be installed on the machine that is running the bot. You can download it on the official [FFMPEG website](https://www.ffmpeg.org/).
+The `?play song` command requires FFMPEG to be installed on the machine that is running the bot. You can download it on the official [FFMPEG website](https://www.ffmpeg.org/).
