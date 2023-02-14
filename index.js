@@ -45,7 +45,7 @@ client.player = new Player(client, {
 client.on("ready", () => {
     // Get all ids of the servers
 
-    client.user.setPresence({ activities: [{ name: '?help' }], status: 'online' });
+    client.user.setPresence({ activities: [{ name: '/help' }], status: 'online' });
 
     const guild_ids = client.guilds.cache.map(guild => guild.id);
 
