@@ -32,22 +32,22 @@ node index.js
 
 # Features & Commands
 
-- ?help - Shows you a list of commands
+- /help - Shows you a list of commands
 
-- ?play
+- /play
   - song {url}       - plays the song from the youtube url
   - search {keyword} - searches for the keyword on youtube and plays the first result
   - playlist {url}   - plays the playlist from url
 
-- ?pause - Pause the music
+- /pause - Pause the music
 
-- ?skip - Skip the current song
+- /skip - Skip the current song
 
-- ?resume - Resume the music
+- /resume - Resume the music
 
-- ?queue - Shows the queue
+- /queue - Shows the queue
 
-- ?exit - Leave the voice channel
+- /exit - Leave the voice channel
 
 # Common errors
 
